@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 1rem;
+  text-align: center;
+}
+
+.calculateButton {
+  margin: 2rem;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: orange;
+  background-color: black;
+  border-radius: 7px;
+}
+
+.result {
+  background-color: antiquewhite;
+  width: 20rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.resultArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.missing {
+  margin-top: 20px;
+  font-size: 20px;
+}
