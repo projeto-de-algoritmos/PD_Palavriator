@@ -1,42 +1,26 @@
-export default function trocador(valorTotal, valorPago, picks) {
-  let troco = ((valorPago - valorTotal) * 100).toFixed(2);
+function allConstruct(word, pieces, memo = {}) {
+  // uamos o memo pra não chamar a função recursivamente pra uma palavra já buscada
+  if (word in memo) return memo[word];
+  if (word === "") return [[]];
 
-  let pickValues = [];
+  const result = [];
 
-  for (let pick in picks) {
-    if (picks[pick]) {
-      pickValues.push(values[pick]);
+  for (let piece of pieces) {
+    // se o pedaço for um prefixo da palavra
+    if (word.indexOf(piece) === 0) {
+      const suffix = word.slice(piece.length);
+      const suffixWays = allConstruct(suffix, pieces, memo);
+      const targetWays = suffixWays.map((way) => [piece, ...way]);
+      result.push(...targetWays);
+      // chama recursivamente usando só o restante da palavra
     }
   }
-
-  let qtd = {};
-
-  for (let i = pickValues.length - 1; i >= 0; i--) {
-    while (troco >= pickValues[i]) {
-      troco -= pickValues[i];
-
-      qtd[pickValues[i]] === undefined
-        ? (qtd[pickValues[i]] = 1)
-        : (qtd[pickValues[i]] += 1);
-    }
-  }
-
-  qtd["restante"] = troco;
-
-  return qtd;
+  memo[word] = result;
+  return result;
 }
 
-const values = {
-  moeda1: 1,
-  moeda5: 5,
-  moeda10: 10,
-  moeda25: 25,
-  moeda50: 50,
-  moeda100: 100,
-  nota2: 200,
-  nota5: 500,
-  nota10: 1000,
-  nota20: 2000,
-  nota50: 5000,
-  nota100: 10000,
-};
+console.log(
+  allConstruct("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"])
+);
+
+export default allConstruct;
