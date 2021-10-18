@@ -18,7 +18,17 @@ Palavriator é um mini jogo. Funciona da seguinte maneira:
 Obs: Para formar a palavra, pode repetir pedaços.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![image](https://user-images.githubusercontent.com/54086083/137820241-fde7472c-c813-4bfb-8a19-26dfc9cbf6eb.png)
+
+![image](https://user-images.githubusercontent.com/54086083/137820269-59070cff-3afc-4394-af7a-daf125cf6588.png)
+
+![image](https://user-images.githubusercontent.com/54086083/137820318-02b74fe4-095e-449b-9f72-af0aacd5e4b9.png)
+
+![image](https://user-images.githubusercontent.com/54086083/137820331-64a5d601-37e9-4d7d-bf36-72c54948b124.png)
+
+![image](https://user-images.githubusercontent.com/54086083/137820389-a030db0f-70b9-4216-9d18-aed2e60bae59.png)
+
+
 
 ## Instalação 
 **Linguagem**: JavaScript<br>
