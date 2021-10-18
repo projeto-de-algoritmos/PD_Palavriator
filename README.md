@@ -10,7 +10,12 @@
 | 18/0013637  |  Arthur Paiva Tavares | 
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Palavriator é um mini jogo. Funciona da seguinte maneira:
+* Uma palavra é mostrada na tela e, abaixo dessa palavra, são mostrados pedaços de palavras (*screenshot 1*)
+* O usuário deve informar, no campo indicado, quantas maneiras diferentes a palavra pode ser formada utilizando os pedaços sorteados
+* Para enviar a resposta, basta clicar no botão "responder"
+* É necessário responder antes do tempo esgotar!
+Obs: Para formar a palavra, pode repetir pedaços.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
@@ -41,11 +46,7 @@ npm start
 
 O projeto estará em execução no endereço `localhost:3000`
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 
 
